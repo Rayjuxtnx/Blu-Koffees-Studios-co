@@ -2,7 +2,6 @@
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import BookingSection from '@/components/sections/booking';
-import InquirySection from '@/components/sections/inquiry';
 import { faqs } from '@/lib/data';
 import {
     Accordion,
@@ -11,6 +10,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import { Phone, Mail } from 'lucide-react';
+import InquirySection from '@/components/sections/inquiry';
 
 export default function ContactPage() {
   return (
@@ -40,9 +40,10 @@ export default function ContactPage() {
             </div>
         </section>
 
-        <section id="inquiry">
+        <section id="inquiry" className="container mx-auto px-4">
             <InquirySection />
         </section>
+
 
         <section id="faq" className="container mx-auto px-4 max-w-3xl">
            <div className="text-center mb-12">

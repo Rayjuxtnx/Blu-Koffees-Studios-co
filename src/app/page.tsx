@@ -7,7 +7,7 @@ import Preloader from '@/components/preloader';
 import ShowcasePreview from '@/components/sections/showcase-preview';
 import ServicesPreview from '@/components/sections/services-preview';
 import AboutPreview from '@/components/sections/about-preview';
-import ChatWidget from '@/components/chat-widget';
+import CtaSection from '@/components/sections/cta';
 
 export default function Home() {
   return (
@@ -30,12 +30,12 @@ export default function Home() {
             <AboutPreview />
           </section>
           
-          <section id="social" className="py-20 lg:py-32 bg-accent/50">
+          <section id="social" className="py-20 lg-py-32 bg-accent/50">
             <SocialSection />
           </section>
 
-          <section id="chat" className="py-20 lg:py-32">
-            <ChatWidget />
+          <section id="cta" className="py-20 lg:py-32">
+            <CtaSection />
           </section>
           
         </main>
