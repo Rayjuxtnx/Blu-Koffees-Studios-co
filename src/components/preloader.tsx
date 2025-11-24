@@ -4,15 +4,12 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
-import Logo from './logo';
 import { Aperture, Moon, Sun } from 'lucide-react';
 import placeholderData from '@/lib/placeholder-images.json';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
 
 const Preloader = () => {
   const { setTheme } = useTheme();
-  const [isReady, setIsReady] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const [showPreloader, setShowPreloader] = useState(false);
   const preloaderImage = placeholderData.placeholderImages.find(p => p.id === 'preloader-bg');
@@ -30,8 +27,6 @@ const Preloader = () => {
     } else {
       // If it's their first visit, show the preloader
       setShowPreloader(true);
-      // We are ready to show the content after the preloader logic
-      setIsReady(true);
     }
   }, []);
 
