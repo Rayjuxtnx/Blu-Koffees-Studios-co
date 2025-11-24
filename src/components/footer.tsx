@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Logo from './logo';
 import placeholderData from '@/lib/placeholder-images.json';
@@ -18,7 +19,7 @@ const Footer = () => {
           data-ai-hint={bgImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
       <div className="container mx-auto px-4 py-8 relative">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Logo textClassName="text-white" />
