@@ -1,51 +1,78 @@
 export const showcaseStories = [
   {
-    id: "story-1",
-    title: "Urban Echoes",
-    narrative: "A journey through the city's soul, capturing the silent stories told by its concrete and steel giants. Each frame is a testament to the urban landscape's vibrant, chaotic, and beautiful life.",
-    imageId: "showcase3",
-  },
-  {
     id: "story-2",
     title: "Coastal Whispers",
     narrative: "Exploring the serene and powerful dialogue between the sea and the shore. This series captures the fleeting moments of light, tide, and emotion along the coastline.",
     imageId: "showcase1",
   },
+  {
+    id: "story-1",
+    title: "Urban Echoes",
+    narrative: "A journey through the city's soul, capturing the silent stories told by its concrete and steel giants. Each frame is a testament to the urban landscape's vibrant, chaotic, and beautiful life.",
+    imageId: "showcase3",
+  },
 ];
 
 export const services = [
   {
-    name: "The Portrait Experience",
-    imageId: "servicePortrait",
+    name: "Studio Portrait",
+    imageId: "serviceStudioPortrait",
     description: [
-      "Personalized session for individuals or couples",
-      "Studio or on-location shoot",
-      "Professional editing and retouching",
-      "Online gallery with high-resolution downloads",
+      "Classic and contemporary portraits in a professional studio setting.",
+      "Perfect for individuals, headshots, and creative concepts.",
+      "Full professional lighting and backdrop options available.",
+    ],
+    time: "Approx. 1-2 hours",
+  },
+  {
+    name: "Wedding / Proposals",
+    imageId: "serviceWedding",
+    description: [
+      "Capturing the magic of your most important moments.",
+      "From surprise proposals to full-day wedding coverage.",
+      "A beautiful narrative of your love story told in images.",
+    ],
+    time: "Varies by event",
+  },
+  {
+    name: "Birthdays",
+    imageId: "serviceBirthday",
+    description: [
+      "Celebrate your milestone with a fun and memorable photoshoot.",
+      "Cake smashes, party coverage, or a special portrait session.",
+      "We capture the joy and excitement of your special day.",
+    ],
+    time: "Varies by event",
+  },
+  {
+    name: "Family Photos",
+    imageId: "serviceFamily",
+    description: [
+      "Timeless portraits of you and your loved ones.",
+      "On-location or in-studio sessions available.",
+      "Creating cherished memories for generations to come.",
+    ],
+    time: "Approx. 1.5 hours",
+  },
+  {
+    name: "Baby Bump",
+    imageId: "serviceMaternity",
+    description: [
+      "Elegant and artistic maternity photography.",
+      "Celebrate the beauty of your pregnancy journey.",
+      "Both solo and couple sessions are welcome.",
     ],
     time: "Approx. 2 hours",
   },
   {
-    name: "The Brand Narrative",
-    imageId: "serviceBrand",
+    name: "Graduations",
+    imageId: "serviceGraduation",
     description: [
-      "Custom visual content for your brand or business",
-      "Product, lifestyle, and headshot photography",
-      "Strategy session to align with your brand identity",
-      "Commercial usage rights included",
+      "Commemorate your academic achievement with a portrait session.",
+      "On-campus or in-studio options.",
+      "Cap and gown photos to celebrate your success.",
     ],
-    time: "Half-day or full-day sessions",
-  },
-  {
-    name: "The Event Chronicle",
-    imageId: "serviceEvent",
-    description: [
-      "Candid and formal coverage of your special event",
-      "Corporate events, parties, and small gatherings",
-      "Fast turnaround for social media highlights",
-      "Full event gallery delivered within 2 weeks",
-    ],
-    time: "Varies by event",
+    time: "Approx. 1 hour",
   },
 ];
 

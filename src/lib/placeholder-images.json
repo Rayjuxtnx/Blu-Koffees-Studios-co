@@ -3,8 +3,8 @@
     {
       "id": "hero",
       "description": "A beautiful landscape photo of mountains at dawn.",
-      "imageUrl": "https://images.unsplash.com/photo-1593430939985-9a846525167b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGxpZ2h0JTIwcGFpbnRpbmd8ZW58MHx8fHwxNzY0MDE2MTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract light"
+      "imageUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYW5kc2NhcGUlMjBkYXdufGVufDB8fHx8MTc2NDA5MDUzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape dawn"
     },
     {
       "id": "showcase1",
@@ -17,12 +17,6 @@
       "description": "A vibrant cityscape at night with light trails.",
       "imageUrl": "https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzYzOTE0NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city night"
-    },
-    {
-      "id": "artistPortrait",
-      "description": "A creative portrait of a female artist.",
-      "imageUrl": "https://images.unsplash.com/photo-1745165549821-7382d2e740d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXJ0aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0MDAzMDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "artist portrait"
     },
     {
       "id": "social1",
@@ -55,22 +49,40 @@
       "imageHint": "macro photography"
     },
     {
-      "id": "servicePortrait",
-      "description": "A striking portrait of a person.",
-      "imageUrl": "https://images.unsplash.com/photo-1633594709157-436ed39da9c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjM5MjEyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portrait person"
+      "id": "serviceStudioPortrait",
+      "description": "A professional studio portrait of a woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1631002724711-d1ae3cf651b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "studio portrait"
     },
     {
-      "id": "serviceBrand",
-      "description": "A professional setting for a brand photoshoot.",
-      "imageUrl": "https://images.unsplash.com/photo-1641853256308-ec3b07a8f1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmFuZCUyMHByb2R1Y3R8ZW58MHx8fHwxNzY0MDE2OTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "brand product"
+      "id": "serviceWedding",
+      "description": "A newly married couple at their wedding.",
+      "imageUrl": "https://images.unsplash.com/photo-1596457221755-b96bc3a6df18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc2Mzk0NTc3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding couple"
     },
     {
-      "id": "serviceEvent",
-      "description": "A lively event with many people.",
-      "imageUrl": "https://images.unsplash.com/photo-1721133073235-e4b5facb27fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxldmVudCUyMHBhcnR5fGVufDB8fHx8MTc2NDAxNjk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "event party"
+      "id": "serviceBirthday",
+      "description": "A person celebrating their birthday with a cake.",
+      "imageUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaXJ0aGRheSUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2NDAxNzAyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday celebration"
+    },
+    {
+      "id": "serviceFamily",
+      "description": "A happy family posing for a photo.",
+      "imageUrl": "https://images.unsplash.com/photo-1584415965060-a5279d4d24c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFtaWx5JTIwcGhvdG98ZW58MHx8fHwxNzYzOTA3Mzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family photo"
+    },
+    {
+      "id": "serviceMaternity",
+      "description": "A pregnant woman holding her baby bump.",
+      "imageUrl": "https://images.unsplash.com/photo-1543363902-9d4c1a85e67f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXRlcm5pdHklMjBidW1wfGVufDB8fHx8MTc2NDAxNzAyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "maternity bump"
+    },
+    {
+      "id": "serviceGraduation",
+      "description": "A student in a cap and gown at graduation.",
+      "imageUrl": "https://images.unsplash.com/photo-1722648325285-058946b4487b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmFkdWF0aW9uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0MDE3MDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "graduation portrait"
     }
   ]
 }
