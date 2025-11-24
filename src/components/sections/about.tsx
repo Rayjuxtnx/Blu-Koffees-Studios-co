@@ -1,10 +1,12 @@
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
 const AboutSection = () => {
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-1 gap-8 md:gap-12 items-center">
+    <div className="container mx-auto px-4 relative overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="lens-effect" />
+      </div>
+      <div className="relative z-10 grid md:grid-cols-1 gap-8 md:gap-12 items-center">
         <div className="md:col-span-1 text-center">
           <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Meet the Artist</h2>
           

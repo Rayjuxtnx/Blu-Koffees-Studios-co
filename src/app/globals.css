@@ -83,3 +83,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .lens-effect {
+    @apply absolute w-[50vw] h-[50vw] max-w-[500px] max-h-[500px] rounded-full;
+    background: radial-gradient(
+      circle at center,
+      hsla(var(--primary) / 0.1),
+      hsla(var(--primary) / 0.05) 40%,
+      transparent 70%
+    );
+    animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite,
+               rotate 20s linear infinite;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(0.8);
+  }
+  to {
+    transform: rotate(360deg) scale(0.8);
+  }
+}
