@@ -8,6 +8,7 @@ import ShowcasePreview from '@/components/sections/showcase-preview';
 import ServicesPreview from '@/components/sections/services-preview';
 import AboutPreview from '@/components/sections/about-preview';
 import CtaSection from '@/components/sections/cta';
+import ChatWidget from '@/components/chat-widget';
 
 export default function Home() {
   return (
@@ -18,24 +19,24 @@ export default function Home() {
         <main className="flex-grow">
           <HeroSection />
 
-          <section id="showcase-preview" className="py-20 lg:py-32">
+          <section id="showcase-preview" className="py-16 md:py-20 lg:py-32">
             <ShowcasePreview />
           </section>
 
-          <section id="services-preview" className="py-20 lg:py-32 bg-accent/50">
+          <section id="services-preview" className="py-16 md:py-20 lg:py-32 bg-accent/50">
             <ServicesPreview />
           </section>
 
-          <section id="about-preview" className="py-20 lg:py-32">
+          <section id="about-preview" className="py-16 md:py-20 lg:py-32">
             <AboutPreview />
           </section>
           
-          <section id="social" className="py-20 lg-py-32 bg-accent/50">
+          <section id="social" className="py-16 md:py-20 lg:py-32 bg-accent/50">
             <SocialSection />
           </section>
 
-          <section id="cta" className="py-20 lg:py-32">
-            <CtaSection />
+          <section id="chat" className="py-16 md:py-20 lg:py-32">
+            <ChatWidget />
           </section>
           
         </main>

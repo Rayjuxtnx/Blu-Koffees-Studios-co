@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -19,7 +19,6 @@ import { Input } from "@/components/ui/input";
 import { Loader2, Send } from "lucide-react";
 import { ScrollArea } from "./ui/scroll-area";
 import { cn } from "@/lib/utils";
-import Logo from "./logo";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 import { Aperture } from "lucide-react";
 
@@ -37,6 +36,7 @@ type Message = {
 const ChatWidget = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [conversation, setConversation] = useState<Message[]>([]);
+  const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   const form = useForm<ChatFormValues>({
     resolver: zodResolver(chatSchema),
@@ -44,6 +44,16 @@ const ChatWidget = () => {
       message: "",
     },
   });
+
+  useEffect(() => {
+    if (scrollAreaRef.current) {
+        const viewport = scrollAreaRef.current.querySelector('[data-radix-scroll-area-viewport]');
+        if (viewport) {
+            viewport.scrollTop = viewport.scrollHeight;
+        }
+    }
+  }, [conversation]);
+
 
   async function onSubmit(data: ChatFormValues) {
     setIsLoading(true);
@@ -79,11 +89,11 @@ const ChatWidget = () => {
   return (
     <div className="container mx-auto px-4">
        <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-headline font-bold">
-          Ready to Create Something Beautiful?
+        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+          Have a Quick Question?
         </h2>
         <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Let's bring your vision to life. Chat with our AI assistant to get started, or get in touch directly.
+          Chat with our AI assistant to get instant answers about our services.
         </p>
       </div>
       <Card className="max-w-2xl mx-auto shadow-lg">
@@ -94,12 +104,12 @@ const ChatWidget = () => {
             </AvatarFallback>
           </Avatar>
           <div>
-            <CardTitle className="font-headline text-2xl">AI Assistant</CardTitle>
+            <CardTitle className="font-headline text-xl md:text-2xl">AI Assistant</CardTitle>
             <CardDescription>Ask me anything about your project!</CardDescription>
           </div>
         </CardHeader>
         <CardContent>
-          <ScrollArea className="h-72 w-full pr-4 mb-4">
+          <ScrollArea className="h-72 w-full pr-4 mb-4" ref={scrollAreaRef}>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                   <Avatar className="h-8 w-8">
@@ -157,14 +167,14 @@ const ChatWidget = () => {
                 render={({ field }) => (
                   <FormItem className="flex-grow">
                     <FormControl>
-                      <Input placeholder="Type your message..." {...field} disabled={isLoading} />
+                      <Input placeholder="Type your message..." {...field} disabled={isLoading} className="h-11 text-base"/>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" disabled={isLoading} size="icon">
-                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+              <Button type="submit" disabled={isLoading} size="icon" className="h-11 w-11">
+                {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
                 <span className="sr-only">Send</span>
               </Button>
             </form>

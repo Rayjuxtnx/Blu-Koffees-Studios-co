@@ -10,7 +10,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import { Phone, Mail } from 'lucide-react';
-import InquirySection from '@/components/sections/inquiry';
+import ChatWidget from '@/components/chat-widget';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-24 pb-12 space-y-24">
+      <main className="flex-grow pt-24 pb-12 space-y-16 md:space-y-24">
         <section id="booking">
             <BookingSection />
         </section>
@@ -44,9 +44,9 @@ export default function ContactPage() {
             <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Direct Contact</h2>
                 <p className="text-lg text-muted-foreground mt-2">
-                    For a more direct approach, feel free to reach out via phone or email.
+                    For a more direct approach, feel free to reach out.
                 </p>
-                <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-6">
+                <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
                     <div className="flex items-center gap-2">
                         <Phone className="h-5 w-5 text-primary" />
                         <a href="tel:+254795107535" className="hover:underline">+254 795 107 535</a>
@@ -59,8 +59,8 @@ export default function ContactPage() {
             </div>
         </section>
 
-        <section id="inquiry" className="container mx-auto px-4">
-            <InquirySection />
+        <section id="inquiry">
+            <ChatWidget />
         </section>
 
 

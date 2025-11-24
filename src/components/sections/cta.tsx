@@ -6,8 +6,8 @@ import { ArrowRight } from 'lucide-react';
 const CtaSection = () => {
   return (
     <div className="container mx-auto px-4">
-      <div className="bg-accent/50 p-12 rounded-lg text-center">
-        <h2 className="text-4xl md:text-5xl font-headline font-bold">
+      <div className="bg-accent/50 p-8 md:p-12 rounded-lg text-center">
+        <h2 className="text-3xl md:text-5xl font-headline font-bold">
           Ready to Create Something Beautiful?
         </h2>
         <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">

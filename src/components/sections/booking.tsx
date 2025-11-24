@@ -64,10 +64,10 @@ const BookingSection = () => {
     },
   });
 
-  // We are not using the onSubmit function with Formspree, but react-hook-form requires it.
   function onSubmit(data: BookingFormValues) {
-    // This will not be called when using a standard form action.
-    // The form will submit directly to the Formspree URL.
+    // This function is not called when using a standard form action.
+    // However, it's good practice to keep the form state logic here.
+    console.log("Form data:", data);
   }
 
   return (
@@ -75,8 +75,8 @@ const BookingSection = () => {
       <div className="max-w-3xl mx-auto">
         <Card className="shadow-lg">
           <CardHeader className="text-center">
-            <CardTitle className="text-4xl md:text-5xl font-headline font-bold">Book Your Experience</CardTitle>
-            <CardDescription className="text-lg mt-2">
+            <CardTitle className="text-3xl md:text-5xl font-headline font-bold">Book Your Experience</CardTitle>
+            <CardDescription className="text-base md:text-lg mt-2">
               Select your desired experience and date to begin.
             </CardDescription>
           </CardHeader>
@@ -85,7 +85,7 @@ const BookingSection = () => {
               <form
                 action="https://formspree.io/f/meowgrro"
                 method="POST"
-                className="space-y-8"
+                className="space-y-6"
               >
                 <FormField
                   control={form.control}
@@ -148,7 +148,7 @@ const BookingSection = () => {
                           />
                         </PopoverContent>
                       </Popover>
-                       <input type="hidden" {...form.register("date")} />
+                       <input type="hidden" name="date" value={field.value ? format(field.value, 'yyyy-MM-dd') : ''} />
                       <FormMessage />
                     </FormItem>
                   )}
@@ -194,6 +194,7 @@ const BookingSection = () => {
                           placeholder="Tell us a bit about what you're looking for..."
                           className="resize-none"
                           {...field}
+                          required
                         />
                       </FormControl>
                       <FormDescription>
