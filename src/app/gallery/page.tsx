@@ -4,6 +4,24 @@ import { Card, CardContent } from '@/components/ui/card';
 import { socialPosts } from '@/lib/data';
 import placeholderData from '@/lib/placeholder-images.json';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Photography Gallery | Blu Koffees Studios',
+  description: 'Explore the creative photography gallery of Blu Koffees Studios. A collection of recent work, creative explorations, and moments captured in time.',
+  keywords: [
+    'photography gallery',
+    'photo gallery',
+    'creative photography',
+    'portrait gallery',
+    'landscape photos',
+    'wedding photo gallery',
+    'best photography work',
+    'visual portfolio',
+    'photographer portfolio Kenya',
+    'artistic photos'
+  ]
+};
 
 export default function GalleryPage() {
   return (

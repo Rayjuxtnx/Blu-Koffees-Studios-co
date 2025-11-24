@@ -11,6 +11,25 @@ import {
   } from "@/components/ui/accordion"
 import { Phone, Mail } from 'lucide-react';
 import InquirySection from '@/components/sections/inquiry';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact & Booking | Blu Koffees Studios',
+  description: 'Book your photography session with Blu Koffees Studios. Contact us for weddings, portraits, events, and custom projects. Direct contact info and FAQ available.',
+  keywords: [
+    'contact photographer',
+    'book photography session',
+    'photography booking Kenya',
+    'wedding photographer contact',
+    'portrait session booking',
+    'event photographer inquiry',
+    'custom photography quote',
+    'FAQ photography',
+    'photography prices',
+    'book a photoshoot'
+  ]
+};
+
 
 export default function ContactPage() {
   return (

@@ -6,7 +6,24 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: 'Blu Koffees Studios',
-  description: 'Creative Photography by Blu Koffees Studios',
+  description: 'Creative Photography by Blu Koffees Studios. Specializing in portraits, weddings, events, and family photos in Kenya. Book your timeless experience today.',
+  keywords: [
+    'Blu Koffees Studios',
+    'photography',
+    'photographer',
+    'Kenya photography',
+    'portrait photography',
+    'wedding photography',
+    'event photography',
+    'family photos',
+    'professional photographer',
+    'creative photography',
+    'studio portraits',
+    'lifestyle photography',
+    'Nairobi photographer',
+    'fine art photography',
+    'booking photography session',
+  ],
 };
 
 export default function RootLayout({
