@@ -57,7 +57,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-2">
             <NavLinks />
             <Button asChild className="ml-4">
-              <Link href="mailto:contact@visionaryvault.com">Contact Me</Link>
+              <Link href="mailto:blukoffee1@gmail.com">Contact Me</Link>
             </Button>
           </nav>
           <div className="md:hidden">
@@ -82,7 +82,7 @@ const Header = () => {
                     <nav className="flex flex-col gap-4">
                         <NavLinks />
                         <Button asChild className="mt-4">
-                          <Link href="mailto:contact@visionaryvault.com" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
+                          <Link href="mailto:blukoffee1@gmail.com" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
                         </Button>
                     </nav>
                 </div>

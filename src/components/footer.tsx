@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Logo />
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Visionary Vault. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Blu Koffees Studios. All Rights Reserved.
           </p>
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>

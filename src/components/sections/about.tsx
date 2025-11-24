@@ -25,7 +25,7 @@ const AboutSection = () => {
             </div>
             <div className="pt-4 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               <Button asChild size="lg" variant="outline">
-                <a href="mailto:contact@visionaryvault.com">Work With Me</a>
+                <a href="mailto:blukoffee1@gmail.com">Work With Me</a>
               </Button>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Logo = ({ className }: LogoProps) => {
   return (
     <div className={cn('flex items-center gap-2 text-xl font-bold tracking-wider', className)}>
       <Aperture className="text-primary h-6 w-6" />
-      <span className="font-headline">Visionary Vault</span>
+      <span className="font-headline">Blu Koffees Studios</span>
     </div>
   );
 };

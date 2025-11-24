@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline font-bold tracking-tighter mb-4">
-          Visionary Vault
+          Blu Koffees Studios
         </h1>
         <p className="text-lg md:text-xl max-w-2xl text-primary-foreground/80">
           Where moments become masterpieces and stories are told in light and shadow.

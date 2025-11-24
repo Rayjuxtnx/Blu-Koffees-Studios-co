@@ -182,7 +182,7 @@ const InquirySection = () => {
             <div className="space-y-3 text-lg">
                 <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary"/>
-                    <a href="mailto:contact@visionaryvault.com" className="hover:text-primary transition-colors">contact@visionaryvault.com</a>
+                    <a href="mailto:blukoffee1@gmail.com" className="hover:text-primary transition-colors">blukoffee1@gmail.com</a>
                 </div>
                 <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary"/>

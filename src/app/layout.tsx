@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Visionary Vault',
-  description: 'Creative Photography by Jane Doe',
+  title: 'Blu Koffees Studios',
+  description: 'Creative Photography by Blu Koffees Studios',
 };
 
 export default function RootLayout({
