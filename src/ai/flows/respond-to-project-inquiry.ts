@@ -11,19 +11,17 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const ProjectInquiryInputSchema = z.object({
-  projectDescription: z
-    .string()
-    .describe('A detailed description of the custom project inquiry.'),
-  desiredTimeline: z
-    .string()
-    .describe('The desired timeline for the project completion.'),
-  budget: z.string().describe('The budget allocated for the project.'),
-  contactInformation: z.string().describe('Contact information of the user.'),
+  history: z.array(z.object({
+    role: z.enum(['user', 'model']),
+    content: z.array(z.object({
+        text: z.string(),
+    })),
+  })),
 });
 export type ProjectInquiryInput = z.infer<typeof ProjectInquiryInputSchema>;
 
 const ProjectInquiryOutputSchema = z.object({
-  response: z.string().describe('The LLM-generated response to the project inquiry, including a potential timeline and project plan.'),
+  response: z.string().describe('The LLM-generated response to the project inquiry, continuing the conversation.'),
 });
 export type ProjectInquiryOutput = z.infer<typeof ProjectInquiryOutputSchema>;
 
@@ -35,17 +33,22 @@ const prompt = ai.definePrompt({
   name: 'respondToProjectInquiryPrompt',
   input: {schema: ProjectInquiryInputSchema},
   output: {schema: ProjectInquiryOutputSchema},
-  prompt: `You are a professional photography artist responding to a custom project inquiry.
+  prompt: `You are a friendly and professional AI assistant for Blu Koffees Studios, a photography studio. Your goal is to help potential clients who are chatting with you.
 
-  Based on the following information provided by the user, generate a comprehensive response that includes a potential timeline and a project plan.
+  Converse with them about their needs. You can ask clarifying questions about the project description, desired timeline, budget, and contact information.
 
-  Project Description: {{{projectDescription}}}
-  Desired Timeline: {{{desiredTimeline}}}
-  Budget: {{{budget}}}
-  Contact Information: {{{contactInformation}}}
+  Keep your responses concise and conversational. End your response with a question to keep the conversation going.
 
-  Ensure the response is professional, helpful, and provides clear next steps for the user.
-  `,
+  Here is the conversation history:
+  {{#each history}}
+  {{#if (eq role 'user')}}
+  User: {{content.[0].text}}
+  {{else}}
+  AI: {{content.[0].text}}
+  {{/if}}
+  {{/each}}
+
+  AI:`,
 });
 
 const respondToProjectInquiryFlow = ai.defineFlow(
