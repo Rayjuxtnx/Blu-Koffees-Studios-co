@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -81,6 +82,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  #main-content {
+    transition: opacity 0.7s ease-in-out;
   }
 }
 
