@@ -32,7 +32,7 @@ const ServicesPreview = () => {
                   src={image.imageUrl}
                   alt={image.description}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-all duration-500 group-hover:scale-105 group-hover:blur-sm"
                   data-ai-hint={image.imageHint}
                 />
               )}
