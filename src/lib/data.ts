@@ -16,6 +16,7 @@ export const showcaseStories = [
 export const services = [
   {
     name: "The Portrait Experience",
+    imageId: "servicePortrait",
     description: [
       "Personalized session for individuals or couples",
       "Studio or on-location shoot",
@@ -26,6 +27,7 @@ export const services = [
   },
   {
     name: "The Brand Narrative",
+    imageId: "serviceBrand",
     description: [
       "Custom visual content for your brand or business",
       "Product, lifestyle, and headshot photography",
@@ -36,6 +38,7 @@ export const services = [
   },
   {
     name: "The Event Chronicle",
+    imageId: "serviceEvent",
     description: [
       "Candid and formal coverage of your special event",
       "Corporate events, parties, and small gatherings",

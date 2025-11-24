@@ -10,6 +10,9 @@ import {
 } from '@/components/ui/card';
 import { services } from '@/lib/data';
 import { Check } from 'lucide-react';
+import Image from 'next/image';
+import placeholderData from '@/lib/placeholder-images.json';
+
 
 const ServicesSection = () => {
   return (
@@ -22,29 +25,44 @@ const ServicesSection = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-        {services.map((service) => (
-          <Card key={service.name} className="flex flex-col h-full hover:shadow-xl transition-shadow duration-300">
-            <CardHeader>
-              <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
-              <CardDescription>{service.time}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <ul className="space-y-3">
-                {service.description.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-primary mt-1 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-            <CardFooter className="flex flex-col items-start gap-4 mt-4">
-              <Button asChild className="w-full" size="lg">
-                <Link href="#booking">Learn More</Link>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
+        {services.map((service) => {
+          const image = placeholderData.placeholderImages.find(p => p.id === service.imageId);
+          return (
+            <Card key={service.name} className="flex flex-col h-full overflow-hidden group relative text-primary-foreground">
+              {image && (
+                <Image 
+                  src={image.imageUrl}
+                  alt={image.description}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-ai-hint={image.imageHint}
+                />
+              )}
+              <div className="absolute inset-0 bg-black/60"/>
+              <div className="relative flex flex-col h-full">
+                <CardHeader>
+                  <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
+                  <CardDescription className="text-primary-foreground/80">{service.time}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <ul className="space-y-3">
+                    {service.description.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <Check className="h-5 w-5 text-primary mt-1 shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+                <CardFooter className="flex flex-col items-start gap-4 mt-4">
+                  <Button asChild className="w-full" size="lg" variant="outline">
+                    <Link href="#booking">Contact Me</Link>
+                  </Button>
+                </CardFooter>
+              </div>
+            </Card>
+          )
+        })}
       </div>
     </div>
   );
