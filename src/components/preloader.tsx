@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
 import Logo from './logo';
-import { Moon, Sun } from 'lucide-react';
+import { Aperture, Moon, Sun } from 'lucide-react';
 import placeholderData from '@/lib/placeholder-images.json';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
@@ -17,6 +17,7 @@ const Preloader = () => {
   const [showPreloader, setShowPreloader] = useState(false);
   const preloaderImage = placeholderData.placeholderImages.find(p => p.id === 'preloader-bg');
   const signatureText = "Powered by Philip Otis";
+  const logoText = "Blu Koffees Studios";
 
   useEffect(() => {
     // Check if the user has visited before
@@ -71,7 +72,20 @@ const Preloader = () => {
       )}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-md" />
       <div className="relative text-center animate-fade-in-up">
-        <Logo className="text-4xl md:text-5xl justify-center" textClassName="glowing-text" />
+        <div className='flex items-center gap-2 text-4xl md:text-5xl font-bold tracking-wider justify-center'>
+            <Aperture className="text-primary h-10 w-10 md:h-12 md:w-12" />
+            <span className="font-headline">
+                 {logoText.split('').map((char, index) => (
+                    <span
+                        key={index}
+                        className="glowing-text-char"
+                        style={{ animationDelay: `${0.5 + index * 0.05}s` }}
+                    >
+                        {char === ' ' ? '\u00A0' : char}
+                    </span>
+                ))}
+            </span>
+        </div>
         <p className="mt-4 text-lg text-white/80">Choose your preferred theme to begin.</p>
       </div>
 
