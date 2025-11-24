@@ -1,81 +1,111 @@
 {
   "placeholderImages": [
     {
+      "id": "logo",
+      "description": "The main logo for the website, used in the header and footer.",
+      "imageUrl": "https://images.unsplash.com/photo-1619551734325-81aaf323686c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjM5NzEzODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
       "id": "preloader-bg",
       "description": "Background image for the initial theme selection screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1530880523063-2f8bb2c230c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibHVycnklMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc2NDAyMTY3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVycnklMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc2NDAyMTY3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "blurry background"
     },
     {
       "id": "hero",
       "description": "The main hero image on the Homepage.",
-      "imageUrl": "https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYW5kc2NhcGUlMjBwaG90b2dyYXBoeXxlbnwwfHx8fDE3NjQwMjE2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1504389557830-b293439b92d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsYW5kc2NhcGUlMjBwaG90b2dyYXBoeXxlbnwwfHx8fDE3NjQwMjE2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "landscape photography"
     },
     {
       "id": "serviceStudioPortrait",
       "description": "Image for the 'Studio Portrait' service and the 'About' section.",
-      "imageUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1630255732364-a69ade0f0543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "studio portrait"
     },
     {
       "id": "serviceWedding",
       "description": "Image for the 'Wedding / Proposals' service.",
-      "imageUrl": "https://images.unsplash.com/photo-1618566864264-fb013f791da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc2Mzk0NTc3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc2Mzk0NTc3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wedding couple"
     },
     {
       "id": "serviceBirthday",
       "description": "Image for the 'Birthdays' service.",
-      "imageUrl": "https://images.unsplash.com/photo-1533294160622-d5fece3e080d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmlydGhkYXklMjBjZWxlYnJhdGlvbnxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaXJ0aGRheSUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2NDAxNzAyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "birthday celebration"
     },
     {
       "id": "serviceFamily",
       "description": "Image for the 'Family Photos' service.",
-      "imageUrl": "https://images.unsplash.com/photo-1579538506280-84e461ad0077?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYW1pbHklMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzIwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1588352873216-61d174714a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzIwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "family portrait"
     },
     {
       "id": "serviceMaternity",
       "description": "Image for the 'Baby Bump' (Maternity) service.",
-      "imageUrl": "https://images.unsplash.com/photo-1624403862285-f297744ae419?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYXRlcm5pdHklMjBwaG90b3xlbnwwfHx8fDE3NjQwMjE2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624403859366-24d9a0db16e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXRlcm5pdHklMjBwaG90b3xlbnwwfHx8fDE3NjQwMjE2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "maternity photo"
     },
     {
       "id": "serviceGraduation",
       "description": "Image for the 'Graduations' service.",
-      "imageUrl": "https://images.unsplash.com/photo-1625061769154-9fd416ed327d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFkdWF0aW9uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0MDE3MDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616701318247-e87eb43e79e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmFkdWF0aW9uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0MDE3MDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "graduation portrait"
+    },
+    {
+      "id": "showcase1",
+      "description": "Image for the 'Coastal Whispers' showcase story.",
+      "imageUrl": "https://images.unsplash.com/photo-1731965201958-422edcf968cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2FzdGFsJTIwc2NlbmV8ZW58MHx8fHwxNzY0MDIxNzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coastal scene"
+    },
+    {
+      "id": "showcase3",
+      "description": "Image for the 'Urban Echoes' showcase story.",
+      "imageUrl": "https://images.unsplash.com/photo-1611080870386-8be9a7663098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dXJiYW4lMjBjaXR5fGVufDB8fHx8MTc2NDAyMTczNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "urban city"
+    },
+    {
+      "id": "showcaseMonochrome",
+      "description": "Image for the 'Monochrome Moments' showcase story.",
+      "imageUrl": "https://images.unsplash.com/photo-1704122545115-6ea32eea3187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb25vY2hyb21lJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYzOTI5OTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monochrome abstract"
+    },
+    {
+      "id": "showcaseGoldenHour",
+      "description": "Image for the 'Golden Hour Portraits' showcase story.",
+      "imageUrl": "https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xkZW4lMjBob3VyfGVufDB8fHx8MTc2NDAyMTczNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golden hour"
     },
     {
       "id": "social1",
       "description": "First image for the social feed carousel on the Homepage and the Gallery page.",
-      "imageUrl": "https://images.unsplash.com/photo-1613047503507-b8d01ce6af26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lcmElMjBnZWFyfGVufDB8fHx8MTc2NDAyMTY3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1486257293255-8810a92c541f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYW1lcmElMjBnZWFyfGVufDB8fHx8MTc2NDAyMTY3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "camera gear"
     },
     {
       "id": "social2",
       "description": "Second image for the social feed carousel on the Homepage and the Gallery page.",
-      "imageUrl": "https://images.unsplash.com/photo-1516962126636-27ad087061cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2MzkzOTcxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601854266103-c1dd42130633?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2MzkzOTcxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vintage camera"
     },
     {
       "id": "social3",
       "description": "Third image for the social feed carousel on the Homepage and the Gallery page.",
-      "imageUrl": "https://images.unsplash.com/photo-1634148739677-a5bb54df2611?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwaG90byUyMHN0dWRpb3xlbnwwfHx8fDE3NjQwMTU5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1615458508880-ec0521ce754f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGhvdG8lMjBzdHVkaW98ZW58MHx8fHwxNzY0MDE1OTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "photo studio"
     },
     {
       "id": "social4",
       "description": "Fourth image for the social feed carousel on the Homepage and the Gallery page.",
-      "imageUrl": "https://images.unsplash.com/photo-1602426973528-040a2abb486c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb3VudGFpbiUyMHN1bnJpc2V8ZW58MHx8fHwxNzYzOTEyMTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594329852649-012d9528deda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHN1bnJpc2V8ZW58MHx8fHwxNzYzOTEyMTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain sunrise"
     },
     {
       "id": "social5",
       "description": "Fifth image for the social feed carousel on the Homepage and the Gallery page.",
-      "imageUrl": "https://images.unsplash.com/photo-1695551527664-585082953b87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWNybyUyMGRyb3BzfGVufDB8fHx8MTc2NDAyMTY3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731081436783-1ac3de041bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWNybyUyMGRyb3BzfGVufDB8fHx8MTc2NDAyMTY3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "macro drops"
     }
   ]
