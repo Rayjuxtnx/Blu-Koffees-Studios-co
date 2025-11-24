@@ -11,12 +11,6 @@ export const showcaseStories = [
     narrative: "Exploring the serene and powerful dialogue between the sea and the shore. This series captures the fleeting moments of light, tide, and emotion along the coastline.",
     imageId: "showcase1",
   },
-  {
-    id: "story-3",
-    title: "Human Canvas",
-    narrative: "A collection of portraits that look beyond the surface, revealing the unique stories, emotions, and character etched into every face. Each photograph is a collaboration, a shared moment of vulnerability and strength.",
-    imageId: "showcase2",
-  },
 ];
 
 export const services = [
