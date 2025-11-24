@@ -119,6 +119,7 @@ const BookingSection = () => {
                               {service.name}
                             </SelectItem>
                           ))}
+                          <SelectItem value="Custom Project">Custom Project</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
