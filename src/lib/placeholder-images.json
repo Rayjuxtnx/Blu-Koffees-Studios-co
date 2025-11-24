@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Abstract purple and blue light trails.",
-      "imageUrl": "https://images.unsplash.com/photo-1550275994-2bc88dc68637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGxpZ2h0c3xlbnwwfHx8fDE3NjQwMTU5Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract lights"
+      "description": "A long exposure of a ferris wheel at night, creating a colorful, circular light pattern.",
+      "imageUrl": "https://images.unsplash.com/photo-1542317852-32338b3c3756?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGxpZ2h0JTIwcGFpbnRpbmd8ZW58MHx8fHwxNzY0MDk3NDAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "light painting"
     },
     {
       "id": "showcase1",
