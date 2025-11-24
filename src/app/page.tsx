@@ -4,6 +4,10 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/sections/hero';
 import SocialSection from '@/components/sections/social';
 import Preloader from '@/components/preloader';
+import ShowcasePreview from '@/components/sections/showcase-preview';
+import ServicesPreview from '@/components/sections/services-preview';
+import AboutPreview from '@/components/sections/about-preview';
+import CtaSection from '@/components/sections/cta';
 
 export default function Home() {
   return (
@@ -13,9 +17,25 @@ export default function Home() {
         <Header />
         <main className="flex-grow">
           <HeroSection />
+
+          <section id="showcase-preview" className="py-20 lg:py-32">
+            <ShowcasePreview />
+          </section>
+
+          <section id="services-preview" className="py-20 lg:py-32 bg-accent/50">
+            <ServicesPreview />
+          </section>
+
+          <section id="about-preview" className="py-20 lg:py-32">
+            <AboutPreview />
+          </section>
           
           <section id="social" className="py-20 lg:py-32 bg-accent/50">
             <SocialSection />
+          </section>
+
+          <section id="cta" className="py-20 lg:py-32">
+            <CtaSection />
           </section>
           
         </main>
