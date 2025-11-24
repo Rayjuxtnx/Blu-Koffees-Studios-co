@@ -15,10 +15,10 @@ import { ThemeToggle } from './theme-toggle';
 
 
 const navItems = [
-  { href: '#showcase', label: 'Showcase' },
-  { href: '#services', label: 'Experiences' },
+  { href: '/showcase', label: 'Showcase' },
+  { href: '/services', label: 'Experiences' },
+  { href: '/about', label: 'About' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '#about', label: 'About' },
 ];
 
 const Header = () => {
@@ -59,7 +59,7 @@ const Header = () => {
             <NavLinks />
             <ThemeToggle />
             <Button asChild className="ml-4">
-              <Link href="mailto:blukoffee1@gmail.com">Contact Me</Link>
+              <Link href="/contact">Contact Me</Link>
             </Button>
           </nav>
           <div className="md:hidden flex items-center gap-2">
@@ -85,7 +85,7 @@ const Header = () => {
                     <nav className="flex flex-col gap-4">
                         <NavLinks />
                         <Button asChild className="mt-4">
-                          <Link href="mailto:blukoffee1@gmail.com" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
+                          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
                         </Button>
                     </nav>
                 </div>

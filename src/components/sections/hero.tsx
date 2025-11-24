@@ -27,7 +27,7 @@ const HeroSection = () => {
           Where moments become masterpieces and stories are told in light and shadow.
         </p>
       </div>
-      <Link href="#showcase" aria-label="Scroll to next section" className="absolute bottom-10 z-10 animate-bounce">
+      <Link href="/showcase" aria-label="Scroll to next section" className="absolute bottom-10 z-10 animate-bounce">
         <ChevronDown className="h-8 w-8 text-white" />
       </Link>
     </section>

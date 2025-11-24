@@ -56,7 +56,7 @@ const ServicesSection = () => {
                 </CardContent>
                 <CardFooter className="flex flex-col items-start gap-4 mt-4">
                   <Button asChild className="w-full" size="lg" variant="outline">
-                    <Link href="#booking">Contact Me</Link>
+                    <Link href="/contact#booking">Contact Me</Link>
                   </Button>
                 </CardFooter>
               </div>
