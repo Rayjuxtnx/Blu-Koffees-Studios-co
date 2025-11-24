@@ -1,32 +1,14 @@
-import Image from 'next/image';
-import placeholderData from '@/lib/placeholder-images.json';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const AboutSection = () => {
-  const artistImage = placeholderData.placeholderImages.find(p => p.id === 'artistPortrait');
-
   return (
     <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
-        <div className="md:col-span-2">
-          {artistImage && (
-            <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src={artistImage.imageUrl}
-                alt={artistImage.description}
-                width={600}
-                height={800}
-                className="object-cover w-full h-full"
-                data-ai-hint={artistImage.imageHint}
-              />
-            </div>
-          )}
-        </div>
-        <div className="md:col-span-3">
+      <div className="grid md:grid-cols-1 gap-8 md:gap-12 items-center">
+        <div className="md:col-span-1 text-center">
           <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Meet the Artist</h2>
           
-          <div className="space-y-6 text-lg text-foreground/80">
+          <div className="space-y-6 text-lg text-foreground/80 max-w-3xl mx-auto">
             <div>
               <h3 className="text-xl font-bold text-foreground font-headline mb-2">Creative Philosophy</h3>
               <p>
@@ -40,8 +22,8 @@ const AboutSection = () => {
               </p>
             </div>
             <div className="pt-4">
-              <Button asChild size="lg">
-                <Link href="#inquiry">Work With Me</Link>
+              <Button asChild size="lg" variant="outline">
+                <a href="mailto:contact@visionaryvault.com">Work With Me</a>
               </Button>
             </div>
           </div>
