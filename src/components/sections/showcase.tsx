@@ -26,11 +26,11 @@ const ShowcaseSection = () => {
             <Card key={story.id} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 {image && (
-                  <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
+                  <div className="aspect-square overflow-hidden rounded-t-lg">
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
-                      width={800}
+                      width={600}
                       height={600}
                       className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                       data-ai-hint={image.imageHint}
