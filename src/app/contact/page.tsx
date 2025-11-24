@@ -35,50 +35,52 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-24 pb-12 space-y-16 md:space-y-24">
+      <main className="flex-grow">
         <section id="booking">
             <BookingSection />
         </section>
 
-        <section id="direct-contact" className="container mx-auto px-4 max-w-3xl">
-            <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Direct Contact</h2>
-                <p className="text-lg text-muted-foreground mt-2">
-                    For a more direct approach, feel free to reach out.
-                </p>
-                <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-                    <div className="flex items-center gap-2">
-                        <Phone className="h-5 w-5 text-primary" />
-                        <a href="https://wa.me/254795107535" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+254 795 107 535</a>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <Mail className="h-5 w-5 text-primary" />
-                        <a href="mailto:blukoffee1@gmail.com" className="text-primary hover:underline">blukoffee1@gmail.com</a>
+        <div className="py-16 md:py-24 space-y-16 md:space-y-24">
+            <section id="direct-contact" className="container mx-auto px-4 max-w-3xl">
+                <div className="text-center">
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Direct Contact</h2>
+                    <p className="text-lg text-muted-foreground mt-2">
+                        For a more direct approach, feel free to reach out.
+                    </p>
+                    <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                        <div className="flex items-center gap-2">
+                            <Phone className="h-5 w-5 text-primary" />
+                            <a href="https://wa.me/254795107535" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+254 795 107 535</a>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Mail className="h-5 w-5 text-primary" />
+                            <a href="mailto:blukoffee1@gmail.com" className="text-primary hover:underline">blukoffee1@gmail.com</a>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="inquiry" className="container mx-auto px-4">
+                <InquirySection />
+            </section>
+
+
+            <section id="faq" className="container mx-auto px-4 max-w-3xl">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Frequently Asked Questions</h2>
             </div>
-        </section>
-
-        <section id="inquiry" className="container mx-auto px-4">
-            <InquirySection />
-        </section>
-
-
-        <section id="faq" className="container mx-auto px-4 max-w-3xl">
-           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Frequently Asked Questions</h2>
-          </div>
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem value={`item-${index}`} key={index}>
-                <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
+            <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                    <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                    {faq.answer}
+                    </AccordionContent>
+                </AccordionItem>
+                ))}
+            </Accordion>
+            </section>
+        </div>
 
       </main>
       <Footer />

@@ -19,6 +19,12 @@
       "imageHint": "landscape photography"
     },
     {
+      "id": "booking-bg",
+      "description": "The background image for the booking form section.",
+      "imageUrl": "https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xkZW4lMjBob3VyfGVufDB8fHx8MTc2NDAyMTczNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunset beach"
+    },
+    {
       "id": "serviceStudioPortrait",
       "description": "Image for the 'Studio Portrait' service and the 'About' section.",
       "imageUrl": "https://images.unsplash.com/photo-1630255732364-a69ade0f0543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
