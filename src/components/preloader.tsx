@@ -6,12 +6,15 @@ import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
 import Logo from './logo';
 import { Moon, Sun } from 'lucide-react';
+import placeholderData from '@/lib/placeholder-images.json';
+import Image from 'next/image';
 
 const Preloader = () => {
   const { setTheme } = useTheme();
   const [isReady, setIsReady] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const [showPreloader, setShowPreloader] = useState(false);
+  const preloaderImage = placeholderData.placeholderImages.find(p => p.id === 'preloader-bg');
 
   useEffect(() => {
     // Check if the user has visited before
@@ -54,16 +57,28 @@ const Preloader = () => {
         isExiting ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <div className="text-center animate-fade-in-up">
-        <Logo className="text-3xl md:text-4xl justify-center" />
-        <p className="mt-4 text-lg text-muted-foreground">Choose your preferred theme to begin.</p>
+      {preloaderImage && (
+        <Image
+          src={preloaderImage.imageUrl}
+          alt={preloaderImage.description}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={preloaderImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-md" />
+      <div className="relative text-center animate-fade-in-up">
+        <Logo className="text-4xl md:text-5xl justify-center" textClassName="glowing-text" />
+        <p className="mt-4 text-lg text-white/80">Choose your preferred theme to begin.</p>
       </div>
 
-      <div className="flex gap-4 mt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+      <div className="relative flex gap-4 mt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
         <Button
           variant="outline"
           size="lg"
           onClick={() => handleThemeSelection('light')}
+          className="bg-white/10 text-white hover:bg-white/20 border-white/20"
         >
           <Sun className="mr-2" /> Light
         </Button>
@@ -71,6 +86,7 @@ const Preloader = () => {
           variant="outline"
           size="lg"
           onClick={() => handleThemeSelection('dark')}
+          className="bg-white/10 text-white hover:bg-white/20 border-white/20"
         >
           <Moon className="mr-2" /> Dark
         </Button>
@@ -80,4 +96,3 @@ const Preloader = () => {
 };
 
 export default Preloader;
-

@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "preloader-bg",
+      "description": "A beautiful, blurry sunset over the ocean.",
+      "imageUrl": "https://images.unsplash.com/photo-1502657877623-f66bf489d236?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVycnklMjBzdW5zZXR8ZW58MHx8fHwxNzY0MDk4MTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blurry sunset"
+    },
+    {
       "id": "hero",
       "description": "A beautiful landscape photo of mountains at dawn.",
       "imageUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYW5kc2NhcGUlMjBkYXdufGVufDB8fHx8MTc2NDA5MDUzMnww&ixlib=rb-4.1.0&q=80&w=1080",
