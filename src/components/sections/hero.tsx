@@ -18,7 +18,7 @@ const HeroSection = () => {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
       <div className="relative z-10 flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline font-bold tracking-tighter mb-4">
           Blu Koffees Studios
