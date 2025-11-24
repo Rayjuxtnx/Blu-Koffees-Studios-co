@@ -11,6 +11,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { ThemeToggle } from './theme-toggle';
 
 
 const navItems = [
@@ -56,11 +57,13 @@ const Header = () => {
           </Link>
           <nav className="hidden md:flex items-center gap-2">
             <NavLinks />
+            <ThemeToggle />
             <Button asChild className="ml-4">
               <Link href="mailto:blukoffee1@gmail.com">Contact Me</Link>
             </Button>
           </nav>
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
