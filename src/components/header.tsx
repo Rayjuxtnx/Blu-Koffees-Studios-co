@@ -16,8 +16,8 @@ import {
 const navItems = [
   { href: '#showcase', label: 'Showcase' },
   { href: '#services', label: 'Experiences' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '#about', label: 'About' },
-  { href: '#social', label: 'Social' },
 ];
 
 const Header = () => {
