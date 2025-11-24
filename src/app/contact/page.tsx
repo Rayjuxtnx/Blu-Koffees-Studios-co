@@ -49,11 +49,11 @@ export default function ContactPage() {
                 <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
                     <div className="flex items-center gap-2">
                         <Phone className="h-5 w-5 text-primary" />
-                        <a href="tel:+254795107535" className="hover:underline">+254 795 107 535</a>
+                        <a href="https://wa.me/254795107535" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+254 795 107 535</a>
                     </div>
                     <div className="flex items-center gap-2">
                         <Mail className="h-5 w-5 text-primary" />
-                        <a href="mailto:blukoffee1@gmail.com" className="hover:underline">blukoffee1@gmail.com</a>
+                        <a href="mailto:blukoffee1@gmail.com" className="text-primary hover:underline">blukoffee1@gmail.com</a>
                     </div>
                 </div>
             </div>
