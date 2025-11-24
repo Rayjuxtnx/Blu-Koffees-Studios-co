@@ -10,17 +10,6 @@ const AboutSection = () => {
         <div className="lens-effect" />
       </div>
       <div className="relative z-10 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-         <div className="relative aspect-square max-w-md mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-           {aboutImage && (
-            <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                fill
-                className="object-cover rounded-lg shadow-lg"
-                data-ai-hint={aboutImage.imageHint}
-            />
-           )}
-        </div>
         <div className="text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>Meet the Artist</h2>
           
@@ -43,6 +32,17 @@ const AboutSection = () => {
               </Button>
             </div>
           </div>
+        </div>
+        <div className="relative aspect-square max-w-md mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+           {aboutImage && (
+            <Image
+                src={aboutImage.imageUrl}
+                alt={aboutImage.description}
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                data-ai-hint={aboutImage.imageHint}
+            />
+           )}
         </div>
       </div>
     </div>
