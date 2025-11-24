@@ -97,11 +97,31 @@ export default {
             transform: 'translateY(0)',
           },
         },
+        'fadeInGlow': {
+          from: {
+            opacity: '0',
+            textShadow: '0 0 5px transparent',
+          },
+          to: {
+            opacity: '1',
+            textShadow: '0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(45 100% 50% / 0.5)',
+          },
+        },
+        'fadeOut': {
+          from: {
+            opacity: '1',
+          },
+          to: {
+            opacity: '0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.8s ease-out both',
+        'fadeInGlow': 'fadeInGlow 1.5s forwards',
+        'fadeOut': 'fadeOut 1.5s forwards 5s',
       },
     },
   },

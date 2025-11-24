@@ -8,6 +8,7 @@ import Logo from './logo';
 import { Moon, Sun } from 'lucide-react';
 import placeholderData from '@/lib/placeholder-images.json';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const Preloader = () => {
   const { setTheme } = useTheme();
@@ -15,6 +16,7 @@ const Preloader = () => {
   const [isExiting, setIsExiting] = useState(false);
   const [showPreloader, setShowPreloader] = useState(false);
   const preloaderImage = placeholderData.placeholderImages.find(p => p.id === 'preloader-bg');
+  const signatureText = "Powered by Philip Otis";
 
   useEffect(() => {
     // Check if the user has visited before
@@ -90,6 +92,19 @@ const Preloader = () => {
         >
           <Moon className="mr-2" /> Dark
         </Button>
+      </div>
+      <div className="absolute bottom-8 text-center text-sm text-white/50">
+        <div className="signature-container">
+          {signatureText.split('').map((char, index) => (
+            <span
+              key={index}
+              className="signature-char"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {char === ' ' ? '\u00A0' : char}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
