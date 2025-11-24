@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -35,13 +36,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
-import { CalendarIcon, Loader2 } from "lucide-react";
+import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { services } from "@/lib/data";
-import { submitBooking } from "@/app/actions";
-import { useState } from "react";
 
 const bookingSchema = z.object({
   service: z.string().min(1, { message: "Please select a service." }),
@@ -56,8 +54,6 @@ const bookingSchema = z.object({
 type BookingFormValues = z.infer<typeof bookingSchema>;
 
 const BookingSection = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
@@ -68,24 +64,10 @@ const BookingSection = () => {
     },
   });
 
-  async function onSubmit(data: BookingFormValues) {
-    setIsSubmitting(true);
-    const result = await submitBooking(data);
-    setIsSubmitting(false);
-
-    if (result.success) {
-      toast({
-        title: "Booking Request Sent!",
-        description: result.message,
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Submission Failed",
-        description: result.message,
-      });
-    }
+  // We are not using the onSubmit function with Formspree, but react-hook-form requires it.
+  function onSubmit(data: BookingFormValues) {
+    // This will not be called when using a standard form action.
+    // The form will submit directly to the Formspree URL.
   }
 
   return (
@@ -100,14 +82,18 @@ const BookingSection = () => {
           </CardHeader>
           <CardContent>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+              <form
+                action="https://formspree.io/f/meowgrro"
+                method="POST"
+                className="space-y-8"
+              >
                 <FormField
                   control={form.control}
                   name="service"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Select an Experience</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} defaultValue={field.value} name={field.name}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Choose a service..." />
@@ -162,6 +148,7 @@ const BookingSection = () => {
                           />
                         </PopoverContent>
                       </Popover>
+                       <input type="hidden" {...form.register("date")} />
                       <FormMessage />
                     </FormItem>
                   )}
@@ -188,7 +175,7 @@ const BookingSection = () => {
                       <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input placeholder="youremail@gmail.com" {...field} />
+                          <Input placeholder="youremail@gmail.com" type="email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -217,8 +204,7 @@ const BookingSection = () => {
                   )}
                 />
 
-                <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
-                   {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                <Button type="submit" className="w-full" size="lg">
                   Submit Booking Request
                 </Button>
               </form>
