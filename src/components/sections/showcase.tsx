@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   Card,
   CardContent,
@@ -7,7 +6,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { showcaseStories } from '@/lib/data';
-import placeholderData from '@/lib/placeholder-images.json';
 
 const ShowcaseSection = () => {
   return (
@@ -19,28 +17,15 @@ const ShowcaseSection = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
         {showcaseStories.map((story) => {
-          const image = placeholderData.placeholderImages.find(p => p.id === story.imageId);
           return (
-            <Card key={story.id} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+            <Card key={story.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-accent/50 text-center">
               <CardHeader>
-                {image && (
-                  <div className="aspect-square overflow-hidden rounded-t-lg">
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      width={600}
-                      height={600}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                      data-ai-hint={image.imageHint}
-                    />
-                  </div>
-                )}
                 <CardTitle className="pt-4 font-headline text-2xl">{story.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>{story.narrative}</CardDescription>
+                <CardDescription className="text-foreground/80">{story.narrative}</CardDescription>
               </CardContent>
             </Card>
           );
