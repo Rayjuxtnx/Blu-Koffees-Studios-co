@@ -1,3 +1,5 @@
+
+import Link from 'next/link';
 import Logo from './logo';
 
 const Footer = () => {
@@ -9,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Logo />
           <div className="flex flex-col items-center md:items-end gap-2">
-            <div className="signature-container">
+            <Link href="https://portifolio-nu-nine-95.vercel.app/" target="_blank" rel="noopener noreferrer" className="signature-container">
               {signatureText.split('').map((char, index) => (
                 <span
                   key={index}
@@ -19,7 +21,7 @@ const Footer = () => {
                   {char === ' ' ? '\u00A0' : char}
                 </span>
               ))}
-            </div>
+            </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left">
               &copy; {new Date().getFullYear()} Blu Koffees Studios. All Rights Reserved.
             </p>

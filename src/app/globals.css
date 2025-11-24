@@ -110,9 +110,9 @@
     @apply flex justify-center;
   }
   .signature-char {
-    @apply bg-gradient-to-r from-yellow-400 via-blue-400 to-yellow-600 bg-clip-text text-transparent opacity-0;
+    @apply bg-gradient-to-r from-yellow-400 via-blue-400 to-yellow-600 bg-clip-text text-transparent;
     filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.6));
-    animation: fadeInGlow 1.5s forwards, fadeOut 1.5s forwards 5s;
+    animation: fadeInGlowLoop 6s infinite;
   }
 }
 
@@ -133,6 +133,17 @@
   }
   to {
     transform: rotate(360deg) scale(0.8);
+  }
+}
+
+@keyframes fadeInGlowLoop {
+  0%, 100% {
+    opacity: 0;
+    text-shadow: 0 0 5px transparent;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(45 100% 50% / 0.5);
   }
 }
 
