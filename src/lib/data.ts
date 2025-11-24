@@ -29,7 +29,6 @@ export const services = [
       "Online gallery with high-resolution downloads",
     ],
     time: "Approx. 2 hours",
-    rate: "Starting at $450",
   },
   {
     name: "The Brand Narrative",
@@ -40,7 +39,6 @@ export const services = [
       "Commercial usage rights included",
     ],
     time: "Half-day or full-day sessions",
-    rate: "Starting at $950",
   },
   {
     name: "The Event Chronicle",
@@ -51,7 +49,6 @@ export const services = [
       "Full event gallery delivered within 2 weeks",
     ],
     time: "Varies by event",
-    rate: "Starting at $600",
   },
 ];
 

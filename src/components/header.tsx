@@ -18,7 +18,6 @@ const navItems = [
   { href: '#services', label: 'Experiences' },
   { href: '#about', label: 'About' },
   { href: '#social', label: 'Social' },
-  { href: '#inquiry', label: 'Inquiry' },
 ];
 
 const Header = () => {
@@ -58,7 +57,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-2">
             <NavLinks />
             <Button asChild className="ml-4">
-              <Link href="#booking">Book Now</Link>
+              <Link href="mailto:contact@visionaryvault.com">Contact Me</Link>
             </Button>
           </nav>
           <div className="md:hidden">
@@ -83,7 +82,7 @@ const Header = () => {
                     <nav className="flex flex-col gap-4">
                         <NavLinks />
                         <Button asChild className="mt-4">
-                        <Link href="#booking" onClick={() => setIsMobileMenuOpen(false)}>Book Now</Link>
+                          <Link href="mailto:contact@visionaryvault.com" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
                         </Button>
                     </nav>
                 </div>

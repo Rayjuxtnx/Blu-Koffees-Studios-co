@@ -39,9 +39,8 @@ const ServicesSection = () => {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col items-start gap-4 mt-4">
-              <p className="font-bold text-lg">{service.rate}</p>
               <Button asChild className="w-full" size="lg">
-                <Link href="#booking">Book Now</Link>
+                <Link href="#booking">Learn More</Link>
               </Button>
             </CardFooter>
           </Card>

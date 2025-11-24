@@ -4,9 +4,7 @@ import HeroSection from '@/components/sections/hero';
 import ShowcaseSection from '@/components/sections/showcase';
 import ServicesSection from '@/components/sections/services';
 import AboutSection from '@/components/sections/about';
-import BookingSection from '@/components/sections/booking';
 import SocialSection from '@/components/sections/social';
-import InquirySection from '@/components/sections/inquiry';
 
 export default function Home() {
   return (
@@ -31,13 +29,6 @@ export default function Home() {
           <SocialSection />
         </section>
         
-        <section id="inquiry" className="py-20 lg:py-32">
-          <InquirySection />
-        </section>
-
-        <section id="booking" className="py-20 lg:py-32 bg-accent/50">
-           <BookingSection />
-        </section>
       </main>
       <Footer />
     </div>
