@@ -8,7 +8,6 @@ import ShowcasePreview from '@/components/sections/showcase-preview';
 import ServicesPreview from '@/components/sections/services-preview';
 import AboutPreview from '@/components/sections/about-preview';
 import CtaSection from '@/components/sections/cta';
-import ChatWidget from '@/components/chat-widget';
 
 export default function Home() {
   return (
@@ -35,8 +34,8 @@ export default function Home() {
             <SocialSection />
           </section>
 
-          <section id="chat" className="py-16 md:py-20 lg:py-32">
-            <ChatWidget />
+          <section id="cta" className="py-16 md:py-20 lg:py-32">
+            <CtaSection />
           </section>
           
         </main>

@@ -10,8 +10,8 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import { Phone, Mail } from 'lucide-react';
-import ChatWidget from '@/components/chat-widget';
 import type { Metadata } from 'next';
+import InquirySection from '@/components/sections/inquiry';
 
 export const metadata: Metadata = {
   title: 'Contact & Booking | Blu Koffees Studios',
@@ -59,8 +59,8 @@ export default function ContactPage() {
             </div>
         </section>
 
-        <section id="inquiry">
-            <ChatWidget />
+        <section id="inquiry" className="container mx-auto px-4">
+            <InquirySection />
         </section>
 
 
