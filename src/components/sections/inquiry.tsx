@@ -186,7 +186,7 @@ const InquirySection = () => {
                 </div>
                 <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary"/>
-                    <span>(555) 123-4567</span>
+                    <span>+254 795 107 535</span>
                 </div>
             </div>
            </div>
