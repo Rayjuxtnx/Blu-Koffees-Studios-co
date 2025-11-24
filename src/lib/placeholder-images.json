@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Abstract purple and blue light trails.",
+      "imageUrl": "https://images.unsplash.com/photo-1550275994-2bc88dc68637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGxpZ2h0c3xlbnwwfHx8fDE3NjQwMTU5Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract lights"
+    },
+    {
+      "id": "showcase1",
+      "description": "A couple silhouetted against a sunset on a beach.",
+      "imageUrl": "https://images.unsplash.com/photo-1542460533-50ac46fb13d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3VwbGUlMjBzdW5zZXR8ZW58MHx8fHwxNzYzOTE2Nzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "couple sunset"
+    },
+    {
+      "id": "showcase2",
+      "description": "A dramatic black and white portrait of a man.",
+      "imageUrl": "https://images.unsplash.com/photo-1583195763986-0231686dcd43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjM5MzAyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "showcase3",
+      "description": "A vibrant cityscape at night with light trails.",
+      "imageUrl": "https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzYzOTE0NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city night"
+    },
+    {
+      "id": "artistPortrait",
+      "description": "A creative portrait of a female artist.",
+      "imageUrl": "https://images.unsplash.com/photo-1745165549821-7382d2e740d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXJ0aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0MDAzMDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artist portrait"
+    },
+    {
+      "id": "social1",
+      "description": "A flat lay of camera equipment on a wooden table.",
+      "imageUrl": "https://images.unsplash.com/photo-1689365977684-5eee4ab046f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lcmElMjBmbGF0bGF5fGVufDB8fHx8MTc2NDAxNTk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "camera flatlay"
+    },
+    {
+      "id": "social2",
+      "description": "A close-up shot of a vintage film camera.",
+      "imageUrl": "https://images.unsplash.com/photo-1516961642265-531546e84af2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2MzkzOTcxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vintage camera"
+    },
+    {
+      "id": "social3",
+      "description": "Behind the scenes of a photoshoot in a studio.",
+      "imageUrl": "https://images.unsplash.com/photo-1634148739677-a5bb54df2611?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwaG90byUyMHN0dWRpb3xlbnwwfHx8fDE3NjQwMTU5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "photo studio"
+    },
+    {
+      "id": "social4",
+      "description": "A beautiful landscape photo of mountains at dawn.",
+      "imageUrl": "https://images.unsplash.com/photo-1610552050890-fe99536c2615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjM5MTY0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape"
+    },
+    {
+      "id": "social5",
+      "description": "A creative macro shot of a water droplet.",
+      "imageUrl": "https://images.unsplash.com/photo-1609355882616-d06ba5118196?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWNybyUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc2NDAxNTk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "macro photography"
+    }
+  ]
 }
