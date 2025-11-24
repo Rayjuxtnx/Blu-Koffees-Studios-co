@@ -10,17 +10,6 @@ const AboutPreview = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative aspect-square max-w-md mx-auto">
-           {aboutImage && (
-            <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                fill
-                className="object-cover rounded-lg shadow-lg"
-                data-ai-hint={aboutImage.imageHint}
-            />
-           )}
-        </div>
         <div className="text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-headline font-bold">Meet the Artist</h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -33,6 +22,17 @@ const AboutPreview = () => {
               </Link>
             </Button>
           </div>
+        </div>
+        <div className="relative aspect-square max-w-md mx-auto">
+           {aboutImage && (
+            <Image
+                src={aboutImage.imageUrl}
+                alt={aboutImage.description}
+                fill
+                className="object-cover rounded-lg shadow-lg"
+                data-ai-hint={aboutImage.imageHint}
+            />
+           )}
         </div>
       </div>
     </div>
