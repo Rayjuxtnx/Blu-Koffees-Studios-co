@@ -56,9 +56,9 @@
     },
     {
       "id": "serviceStudioPortrait",
-      "description": "A professional studio portrait of a woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1631002724711-d1ae3cf651b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQwMTcwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "studio portrait"
+      "description": "A close-up of a professional camera, focusing on the lens.",
+      "imageUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYW1lcmF8ZW58MHx8fHwxNzYzOTE2Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "camera lens"
     },
     {
       "id": "serviceWedding",
