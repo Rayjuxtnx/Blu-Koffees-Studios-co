@@ -25,6 +25,18 @@
       "imageHint": "city night"
     },
     {
+      "id": "showcaseMonochrome",
+      "description": "A dramatic black and white portrait of a man.",
+      "imageUrl": "https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25vY2hyb21lJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NzUzMjg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monochrome portrait"
+    },
+    {
+      "id": "showcaseGoldenHour",
+      "description": "A portrait of a woman in a field during golden hour.",
+      "imageUrl": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xkZW4lMjBob3VyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NzUzMzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golden hour portrait"
+    },
+    {
       "id": "social1",
       "description": "A flat lay of camera equipment on a wooden table.",
       "imageUrl": "https://images.unsplash.com/photo-1689365977684-5eee4ab046f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW1lcmElMjBmbGF0bGF5fGVufDB8fHx8MTc2NDAxNTk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",

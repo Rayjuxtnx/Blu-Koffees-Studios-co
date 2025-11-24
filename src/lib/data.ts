@@ -11,6 +11,18 @@ export const showcaseStories = [
     narrative: "A journey through the city's soul, capturing the silent stories told by its concrete and steel giants. Each frame is a testament to the urban landscape's vibrant, chaotic, and beautiful life.",
     imageId: "showcase3",
   },
+  {
+    id: "story-3",
+    title: "Monochrome Moments",
+    narrative: "Stripping away color to reveal the raw emotion and timeless character of a scene. This collection focuses on the interplay of light, shadow, and texture to create powerful, lasting impressions.",
+    imageId: "showcaseMonochrome",
+  },
+  {
+    id: "story-4",
+    title: "Golden Hour Portraits",
+    narrative: "A series dedicated to the magical light of the golden hour. Each portrait is bathed in a warm, ethereal glow, creating a soft and intimate mood that highlights the natural beauty of the subject.",
+    imageId: "showcaseGoldenHour",
+  },
 ];
 
 export const services = [
