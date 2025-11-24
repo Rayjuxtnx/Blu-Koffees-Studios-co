@@ -50,7 +50,7 @@ const bookingSchema = z.object({
   }),
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email." }),
-  message: z.string().optional(),
+  message: z.string().min(10, { message: "Please enter a message of at least 10 characters." }),
 });
 
 type BookingFormValues = z.infer<typeof bookingSchema>;
@@ -175,7 +175,7 @@ const BookingSection = () => {
                       <FormItem>
                         <FormLabel>Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Jane Doe" {...field} />
+                          <Input placeholder="Your Name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -188,7 +188,7 @@ const BookingSection = () => {
                       <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input placeholder="jane.doe@example.com" {...field} />
+                          <Input placeholder="youremail@gmail.com" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -201,7 +201,7 @@ const BookingSection = () => {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Additional Message (Optional)</FormLabel>
+                      <FormLabel>Additional Message</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Tell us a bit about what you're looking for..."
